@@ -1,1 +1,8 @@
 .venv/
+book_tasks
+python_island
+cd
+lesson4.py
+lesson5.py
+lesson7.py
+test.log
