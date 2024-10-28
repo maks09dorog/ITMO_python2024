@@ -7,10 +7,17 @@
 # Количество букв e - 11
 # .....................
 
-f = open("dump.txt", "rt" )
+import codecs
+fileObj = codecs.open( "dump.txt", "r", "utf_8_sig" )
+message = fileObj.read()
+print(message)
+
+# f = open("dump.txt", "rt" )
 # message = f.read()
-message = 'щсеняя погода очень осенняя погода'
+# message = 'щсеняя погода очень осенняя погода'
+# message = text
 litters = ['а','е','и','о','у','ю','я','ё','ы','э']
+# print(f.read())
 
 count = {}
 for lit in litters:

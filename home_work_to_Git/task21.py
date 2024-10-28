@@ -21,3 +21,12 @@ template = """
  </body>
 </html>
 """
+
+
+html_=template.split('\n')
+
+print(html_)
+
+for key, val in page:
+    if key in html_:
+        '?' = val
