@@ -14,7 +14,13 @@
 
 import codecs
 fileObj = codecs.open( "message.txt", "r", "utf_8_sig" )
-text = fileObj.read()
+# text = fileObj.readlines(5)
+#
+# print(text)
 
-print(text)
+print(fileObj.readline())
+print(fileObj.readline())
+print(fileObj.readline())
+
+fileObj.close()
 

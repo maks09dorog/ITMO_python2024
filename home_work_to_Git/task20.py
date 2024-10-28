@@ -1,6 +1,5 @@
 #todo: Выведите все строки данного файла в обратном порядке.
 # Для этого считайте список всех строк при помощи метода readlines().
-from home_work_to_Git.task23 import fileObj
 
 # Содержимое файла import_this.txt
 text_ = [
@@ -18,10 +17,7 @@ text_ = [
 
 f = open('import_this.txt', 'rt')
 
-print(f.readlines(4))
-print(f.readlines(3))
-print(f.readlines(2))
-print(f.readlines(1))
+a = (f.readlines())
+print(a[::-1])
 
 f.close()
-#todo: readlines выодит от начала до конца

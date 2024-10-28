@@ -29,4 +29,6 @@ print(html_)
 
 for key, val in page:
     if key in html_:
-        '?' = val
+        html[html_.index ("?")] = val
+
+print(html_)
