@@ -22,13 +22,26 @@ template = """
 </html>
 """
 
+template1= ''
 
-html_=template.split('\n')
 
-print(html_)
+for key, val in page.items():
+    if key in template:
+        template1 += template[:template.index('?')] + val
+        template = template[template.index('?') + 1:]
+print(template1)
+        # + template[:template.index('?')+1])
 
-for key, val in page:
-    if key in html_:
-        html[html_.index ("?")] = val
 
-print(html_)
+
+# for key, val in page.items():
+#         if key in template:
+#                 template.replace('?', val, 1)
+# print(template)
+
+# while page.items() != 0:
+#         for key, val in page.items():
+#             if key in template:
+#                 template1 += template[:template.index('?')] + page.pop(key)
+#                 print(template1)
+#                 # + template[:template.index('?')+1])

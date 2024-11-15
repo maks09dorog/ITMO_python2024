@@ -24,7 +24,7 @@ for lit in litters:
     for mes in message:
         if lit in mes:
             count.setdefault(lit, 0)
-            count[lit] = count[lit] + 1
+            count[lit] += + 1
 # print(count)
 for key , val in count.items():
     print(f"Количество букв {key} - {val}")
